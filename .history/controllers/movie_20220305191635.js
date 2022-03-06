@@ -137,7 +137,7 @@ module.exports.processEditPage = (req, res, next) => {
     
 }
 
-// Delete a movie using id. Code added
+// Delete a movie using id.
 module.exports.performDelete = (req, res, next) => {
     let id = req.params.id;
 

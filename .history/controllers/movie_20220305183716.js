@@ -84,7 +84,7 @@ module.exports.processAddPage = (req, res, next) => {
 
 // Gets a movie by id and renders the Edit form using the add_edit.ejs template
 module.exports.displayEditPage = (req, res, next) => {
-    // Code added
+    // ADD YOUR CODE HERE
     let id = req.params.id;
 
     Movie.findById(id, (err, movieToEdit) => {
@@ -107,7 +107,7 @@ module.exports.displayEditPage = (req, res, next) => {
 
 // Processes the data submitted from the Edit form to update a movie
 module.exports.processEditPage = (req, res, next) => {
-    // Code added
+    // ADD YOUR CODE HERE
     let id = req.params.id
 
     let updatedMovie = Movie({
@@ -137,22 +137,9 @@ module.exports.processEditPage = (req, res, next) => {
     
 }
 
-// Delete a movie using id. Code added
+// Deletes a movie based on its id.
 module.exports.performDelete = (req, res, next) => {
-    let id = req.params.id;
-
-    Movie.remove({_id: id}, (err) => {
-        if(err)
-        {
-            console.log(err);
-            res.end(err);
-        }
-        else
-        {
-            // refresh the movie list
-            res.redirect('/movie/list');
-        }
-    });
+    
     
 
 }

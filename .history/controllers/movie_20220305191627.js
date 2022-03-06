@@ -107,7 +107,7 @@ module.exports.displayEditPage = (req, res, next) => {
 
 // Processes the data submitted from the Edit form to update a movie
 module.exports.processEditPage = (req, res, next) => {
-    // Code added
+    // ADD YOUR CODE HERE
     let id = req.params.id
 
     let updatedMovie = Movie({
@@ -137,7 +137,7 @@ module.exports.processEditPage = (req, res, next) => {
     
 }
 
-// Delete a movie using id. Code added
+// Delete a movie using id.
 module.exports.performDelete = (req, res, next) => {
     let id = req.params.id;
 

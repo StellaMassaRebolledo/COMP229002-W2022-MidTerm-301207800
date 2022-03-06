@@ -1,7 +1,5 @@
 /* Author: Prof. Julio Vinicius A. de Carvalho
-Modified by: Stella Massa Rebolledo
-Student ID: 301207800
-Comp 229 Midterm
+
 */
 
 
@@ -14,7 +12,7 @@ if(getTitle == "Movie List")
     for(button of deleteButtons)
     {
         button.addEventListener('click', (event)=>{
-            if(!confirm("Are you sure you want to delete?")) 
+            if(!confirm("Are you sure?")) 
             {
                 event.preventDefault();
             }

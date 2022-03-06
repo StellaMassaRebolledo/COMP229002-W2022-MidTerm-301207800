@@ -1,7 +1,7 @@
 /* Author: Prof. Julio Vinicius A. de Carvalho
 Modified by: Stella Massa Rebolledo
 Student ID: 301207800
-Comp 229 Midterm
+
 */
 
 
